@@ -1,0 +1,11 @@
+certbot/
+
+# not used but anyways:
+nginx/ssl/  
+
+
+node_modules/
+
+dist/
+
+.vscode/

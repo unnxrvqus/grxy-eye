@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>AVXRNUS | Knowledge Base</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/knowledge.css">
+</head>
+
+<body>
+    <div class="page-background"></div>
+    <div class="kb">
+        <header class="kb__header">
+            <div class="kb__logo">
+                <span>></span>
+                AVXRNUS
+            </div>
+            <div class="kb__search">
+                <input type="search" placeholder="Search documentation...">
+            </div>
+            <div class="kb__profile">
+                <div class="kb__avatar">
+                    A
+                </div>
+            </div>
+        </header>
+        <div class="kb__layout">
+            <aside class="kb__sidebar">
+                <h2 class="kb__sidebar-title">
+                    Knowledge Base
+                </h2>
+                <nav>
+                    <ul class="kb__tree">
+                        <li class="kb__item kb__item--active">
+                            📄 Nginx
+                        </li>
+                        <li class="kb__item">
+                            📄 Docker
+                        </li>
+                        <li class="kb__item">
+                            📄 Linux
+                        </li>
+                        <li class="kb__item">
+                            📄 PostgreSQL
+                        </li>
+                        <li class="kb__item">
+                            📄 Redis
+                        </li>
+                        <li class="kb__item">
+                            📄 Express
+                        </li>
+                        <li class="kb__item">
+                            📄 JWT
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="kb__content">
+                <article class="kb__article">
+                    <header class="kb__article-header">
+                        <h1 class="kb__title">
+                            Nginx Configuration
+                        </h1>
+                        <div class="kb__meta">
+                            Updated:
+                            <time>
+                                24 July 2026
+                            </time>
+                        </div>
+                    </header>
+                    <section class="kb__info">
+                        <strong>
+                            INFO
+                        </strong>
+                        <p>
+                            Nginx is a high-performance web server,
+                            reverse proxy and load balancer.
+                        </p>
+                    </section>
+                    <section class="kb__section">
+                        <h2>
+                            Configuration
+                        </h2>
+                        <p>
+                            Reverse proxy allows forwarding client
+                            requests to backend services.
+                        </p>
+                    </section>
+                    <section class="kb__section">
+                        <h2>
+                            Example
+                        </h2>
+                        <pre class="kb__code"><code>
+server {
+    listen 443 ssl;
+    location / {
+        proxy_pass http://localhost:3000;
+    }
+}
+</code></pre>
+                    </section>
+                </article>
+            </main>
+            <aside class="kb__toc">
+                <h3>
+                    Contents
+                </h3>
+                <ul>
+                    <li>Configuration</li>
+                    <li>Reverse Proxy</li>
+                    <li>SSL</li>
+                    <li>Security</li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>
