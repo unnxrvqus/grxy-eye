@@ -10,8 +10,8 @@ const server = http.createServer(
         console.log(req.url);
 
         if (
-            req.url === "/api/server" &&
-            req.method === "GET"
+            req.url === "/api/auth/login" &&
+            req.method === "POST"
         ) {
 
             res.writeHead(200, {
@@ -21,7 +21,9 @@ const server = http.createServer(
 
             res.end(
                 JSON.stringify({
-                    server: os.hostname()
+                    server: os.hostname(),
+                    answer: "Login stub works correctly",
+                    cookie: "Psevdo-cookie"
                 })
             );
 
