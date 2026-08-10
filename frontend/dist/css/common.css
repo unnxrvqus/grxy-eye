@@ -1,0 +1,29 @@
+body {
+    font-family: "JetBrains Mono", monospace;
+    background: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+}
+
+.page-background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(66, 255, 176, .12), transparent 35%),
+        radial-gradient(circle at 80% 80%, rgba(0, 217, 255, .08), transparent 35%),
+        linear-gradient(135deg, #090909, #030303);
+}
+
+.card {
+    background: rgba(17, 17, 17, .85);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(20px);
+}
+
+.glow {
+    box-shadow:
+        0 0 30px rgba(66, 255, 176, .08),
+        0 0 80px rgba(0, 217, 255, .04);
+}

@@ -6,6 +6,7 @@ nginx/ssl/
 
 node_modules/
 
-dist/
+backend/dist/
+frontend/dist/auth
 
 .vscode/
